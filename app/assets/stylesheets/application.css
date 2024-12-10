@@ -13,3 +13,101 @@
  *= require_tree .
  *= require_self
  */
+
+.main-container {
+	margin: 10px;
+}
+
+.container-flat {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.flat-form {
+	background-color: grey;
+	padding: 10px;
+	border-radius: 5%;
+ }
+
+.card-flat {
+	background-color: ghostwhite;
+	border-style: solid;
+	border-radius: 2%;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.flat-image {
+	width: 100%;
+	border-radius: 2%;
+	margin-bottom: 5px;
+}
+
+.infos-number {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.main-infos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-text {
+	padding-left: 10px;
+	background-color: grey;
+	border-radius: 2%;
+	margin-bottom: 5px;
+}
+
+.show-container {
+	margin: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.show-image {
+	width: 100vw;
+	max-height: 200px;
+	object-fit: cover;
+}
+
+.show-title {
+	background-color: lightgrey;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.show-description {
+	background-color: lightgrey;
+	padding: 15px;
+	height: 50vh;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.show-details {
+	background-color: lightgrey;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	width: 250px;
+}
+
+.details-infos {
+	display: flex;
+}
+
+.details-text {
+	padding-right: 10px;
+}
+
+.show-form {
+	background-color: lightgrey;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	width: 250px;
+}

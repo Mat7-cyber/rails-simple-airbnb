@@ -1,0 +1,37 @@
+<%= image_tag @flat.pictures, class:"show-image" %>
+
+<div class="show-container">
+
+	<div class="show-left">
+		<div class="show-title">
+			<h2><%= @flat.name %></h2>
+			<h3><%= @flat.address %></h3>
+		</div>
+
+		<div class="show-description">
+			<h3>A bit more about this flat...</h3>
+			<p><%= @flat.description %></p>
+		</div>
+	</div>
+
+	<div class="show-right">
+		<form action="" class="show-form">
+			<div class="input-group">
+			<span class="input-group-text" id="start-date-label">From:</span>
+			<input type="text" class="form-control" placeholder="12/10/2017" aria-label="start-date" aria-describedby="start-date-label">
+			</div>
+			<div class="input-group mt-2">
+			<span class="input-group-text" id="end-date-label">To:</span>
+			<input type="text" class="form-control" placeholder="18/10/2017" aria-label="end-date" aria-describedby="start-date-label">
+			</div>
+			<input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+		</form>
+		<div class="show-details">
+			<h3>Details</h3>
+			<div class="details-infos">
+				<p class="details-text"><%= @flat.number_of_guests %> people</p>
+				<p><%= @flat.price_per_night %>$</p>
+			</div>
+		</div>
+	</div>
+</div>
